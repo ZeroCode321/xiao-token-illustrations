@@ -1,0 +1,4 @@
+interface:
+  display_name: "小token"
+  short_description: "生成暖纸底色、线条小人的中文手绘配图与角色设定"
+  default_prompt: "Use $xiao-token-illustrations 为这篇中文内容制作一张暖纸底色的小token手绘配图。"
