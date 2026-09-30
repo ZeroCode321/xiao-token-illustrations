@@ -14,7 +14,7 @@ description: 为中文文章、观点或角色设定生成“小token”暖纸�
 - 黑色或深褐黑色墨线是主体；红、橙、蓝仅作少量重点批注。保留留白、手绘起伏和克制的文字。
 - 用户提供的角色或纸张参考图优先于文字描述。生成时传入参考图；编辑时锁定未要求改变的部分。
 
-详细规范见 [角色与纸张](references/visual-identity.md)。本公开版不附带参考图片；若用户提供有权使用的角色图或纸张图，生成时分别用它们校准角色外形与纸张质感。没有参考图时，依照文字规范生成。
+详细规范见 [角色与纸张](references/visual-identity.md)。需要稳定角色外形时，使用 `assets/xiao-token-turnaround.png` 作参考；原始草图 `assets/xiao-token-original-sketch.png` 用于校准纸张质感与手绘气息。
 
 ## 工作方式
 
@@ -27,7 +27,7 @@ description: 为中文文章、观点或角色设定生成“小token”暖纸�
 
 用户只给一个观点或主题并要求做图时，直接把它转成一个具体动作并生成单张图，无需先输出完整配图清单。
 
-用户提供参考图时，将角色图和纸张图分别作为造型与质感参考传入图像工具。参考图中的标签、比例线、问号和表情示例不是正文配图内容。未提供参考图时，直接使用本 Skill 的文字规范。
+每次生图都传入两张内置参考图：原始草图负责纸张与笔触，三视图负责角色结构。参考图中的三栏标签、比例线、问号和表情示例不是正文配图内容。若用户提供更新的角色或底色参考，以新图为准。
 
 ### 角色设定与改图
 
@@ -43,4 +43,4 @@ description: 为中文文章、观点或角色设定生成“小token”暖纸�
 
 最终图片保存到当前工作区中与任务相关的目录，使用有意义的文件名，不覆盖已有版本。交付时说明每张图的用途并提供可点击的文件路径。
 
-本 Skill 改编自 [Ian Xiaohei Illustrations](https://github.com/helloianneo/ian-xiaohei-illustrations) 的文章配图工作流；角色“小token”由本项目作者提供或指导制作。出处见 `NOTICE.md`。原始草图和三视图没有收录在公开版中。
+本 Skill 改编自 [Ian Xiaohei Illustrations](https://github.com/helloianneo/ian-xiaohei-illustrations) 的文章配图工作流；角色“小token”和参考图由本项目作者提供或指导制作。出处见 `NOTICE.md`。本仓库的文字、配置和图片均按 MIT License 开源。
